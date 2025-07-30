@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jacqueine's Profolio Science Page</title>
+    <link rel="stylesheet" type="text/css" href="science.styles.css">
+  </head>
+  <body>
+    <header>
+        <div id="header">
+            <h1>
+                <!-- <p link rel="preconnect" href="https://fonts.googleapis.com">Projects</p> -->
+            </h1>
+        </div>
+    </header>
+
+    <div id="game-container-title">
+        <h2>Games</h2>
+    </div>
+    
+    <div class="game-container">
+        <!-- Escape Room Game Section -->
+        <div class="game escape-room-game">
+            <p class="game-title">Escape Room Horror Game</p>
+            <div class="game-content">
+                <a href="/Users/jacquelinewang/Desktop/Jacqueline_wang_profolio/escape.html">
+                    <img src="img/escape_room.jpg" alt="Escape Room Horror Game">
+                </a>
+                <div class="game-description right">
+                    <p class="game-explanation">
+                        <!-- The escape room game is an interactive experience where players navigate through puzzles and challenges to progress. 
+                        It is designed with eerie sound effects and visuals to create a thrilling and immersive horror atmosphere. -->
+                        The game is an interactive, web-based escape room built using p5.js. 
+                        Players navigate through challenges and puzzles by clicking on various elements to solve them,
+                         progressing through different levels. The game includes unique graphics and sound effects to enhance
+                          the immersive experience. It requires logical thinking and observation, combining visuals, audio, 
+                          and interactive mechanics to create an engaging gameplay experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Dancing Game Section -->
+        <div class="game dancing-game">
+            <p class="game-title">Dancing Game</p>
+            <div class="game-content">
+                <a href="/Users/jacquelinewang/Desktop/Jacqueline_wang_profolio/dancingGame.html" target="_blank">
+                    <img src="img/dancing.jpg" alt="Dancing Game">
+                </a>
+                <div class="game-description left">
+                    <p class="game-explanation">
+                        <!-- The dancing game is an interactive simulation where players follow dance movements and respond to cues on the screen. 
+                        It challenges rhythm and timing while providing a fun and dynamic experience with synchronized music. -->
+                        The game is an interactive, web-based dancing experience developed using p5.js. 
+                        Players engage by following dance movements or patterns on the screen and interacting through clicks or keystrokes.
+                         The goal is to mimic or follow the rhythm, with each successful action contributing to a complete dance routine. 
+                         The game features visually engaging graphics and synchronized music, creating an immersive and fun dance simulation. 
+                         The mechanics challenge players' timing and rhythm skills, combining visual cues and audio elements for an 
+                         enjoyable dance game experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <nav id="sidebar">
+        <ul>
+            <li><a href="profolio_project.html">About</a></li>
+            <li><a href="/Users/jacquelinewang/Desktop/Jacqueline_wang_profolio/Science.html">Tech</a></li>
+            <li><a href="Art.html">Art</a></li>
+            <li><a href="/Users/jacquelinewang/Desktop/Jacqueline_wang_profolio/Contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- <div id="search-box" style="text-align: center; margin-top: 20px;">
+        <input type="text" id="game-search" placeholder="Search games by title..." style="width: 80%; padding: 10px; font-size: 16px;">
+    </div> -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('game-search');
+            const games = document.querySelectorAll('.game');
+        
+            searchInput.addEventListener('keyup', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                games.forEach(game => {
+                    const title = game.querySelector('.game-title').textContent.toLowerCase();
+                    game.style.display = title.includes(searchTerm) ? '' : 'none';
+                });
+            });
+        });
+    </script>
+        
+
+  </body>
+</html>

@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    /* font-family: "Salsa", cursive; */
+}
+
+/* Header Styling */
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    margin-top: 60px;
+}
+
+/* Sidebar Styling */
+#sidebar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Salsa", cursive;
+}
+
+#sidebar ul li a:hover {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+/* Content Styling */
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Section Styling */
+.substance, .story-elements, .takeaways, .challenges, .future-directions {
+    margin-top: 30px;
+    max-width: 800px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.inspiration-words, .story-elements-title-text, .takeaways-title-text, .challenges-title-text, .future-title-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    color: #fff;
+    font-family: "Salsa", cursive;
+}
+
+/* Paragraph and List Styling */
+p, ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Carousel Styling */
+.carousel {
+    margin-top: 20px;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    color: #fff;
+}
+
+.carousel-inner img {
+    width: 80%; /* Adjust this value to shrink the image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    #header {
+        font-size: 1.5rem;
+    }
+
+    #sidebar {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+
+    #sidebar ul {
+        justify-content: space-around;
+    }
+
+    #sidebar ul li a {
+        font-size: 14px;
+    }
+
+    .substance, .story-elements, .takeaways, .challenges, .future-directions {
+        max-width: 90%;
+        margin-bottom: 30px;
+    }
+
+    p, ul {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+/* @media (max-width: 767px) {
+    body, html {
+        height: auto; 
+    }
+
+    #header {
+        flex-direction: column; 
+        height: auto; 
+        padding: 20px 0; 
+    }
+
+    h1 {
+        font-size: 20px; 
+    }
+
+    #gallery_title {
+        font-size: 25px; 
+        position: static; 
+        padding: 20px 0; 
+    }
+
+    #scroll-container {
+        display: block; 
+        overflow-x: auto; 
+        padding: 20px 0; 
+    }
+
+    #scroll-container img {
+        width: 80%; 
+        margin: 0 auto; 
+        display: block; 
+    }
+
+    #sidebar {
+        width: 100%; 
+        position: fixed; 
+        bottom: 0; 
+        height: auto; 
+    }
+
+    #sidebar ul {
+        display: flex; 
+        justify-content: space-around; 
+        flex-wrap: wrap; 
+    }
+
+    #sidebar ul li a {
+        font-size: 14px; 
+        padding: 10px; 
+    }
+} */

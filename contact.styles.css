@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: auto;
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+}
+
+
+
+h1 {
+    margin: 0 auto;
+}
+
+#pic img{
+    position: absolute;
+    top: 20vh;
+    right: 50vw;
+    width: 450px !important;
+    height: auto !important;
+    
+}
+
+
+/* #instagram, #wechat,#email {
+    position: absolute;
+    color: white; 
+}
+
+#instagram {
+    top: 20vh; 
+    left: 10vw; 
+    text-decoration: none;
+} */
+
+/* #email, #email-content {
+    position: absolute; 
+    cursor: pointer;
+} */
+
+/* #email {
+    top: 50vh; 
+    left: 60vw; 
+    font-family:'Times New Roman', Times, serif;
+}
+
+#email-content {
+    top: 55vh; 
+    left: 60vw; 
+    display: none; 
+}
+
+#wechat {
+    top: 80vh; 
+    left: 30vw; 
+    position: absolute;
+    color: white; 
+}
+
+#phone_number {
+    top: 80vh; 
+    right: 30vw; 
+    position: absolute;
+    color: white; 
+} */
+#title {
+    position: absolute;
+    top: 200px; /* 调整垂直位置 */
+    left: 800px; /* 调整水平位置 */
+    text-align: left; /* 将容器内文本左对齐 */
+    max-width: 400px; /* 设置最大宽度，确保所有内容宽度一致 */
+}
+
+#title-header {
+    font-family: "Salsa", cursive;
+    font-size: 20px;
+    color: white;
+}
+
+#role {
+    font-family: "Merriweather", sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    color: aquamarine;
+    margin-bottom: 50px;
+}
+
+.introduction p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.contact_me p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+
+.contact-links {
+    display: flex;
+    flex-direction:row; /* 将布局方向改为竖直 */
+    gap: 50px; /* 每个链接之间的间距 */
+    position: absolute; /* 可以控制它的位置 */
+    bottom: 150px; /* 根据照片的高度进行调整 */
+    left: 395px;
+}
+
+.link {
+    display: flex;
+    flex-direction: column; /* 图标和文字垂直排列 */
+    align-items: center; /* 居中对齐 */
+    color: white; /* 文字和图标颜色 */
+    text-decoration: none;
+    font-size: 18px; /* 文字大小 */
+}
+
+.link i {
+    margin-bottom: 8px; /* 图标和文字之间的间距 */
+    font-size: 24px; /* 图标大小 */
+}
+
+/* 简单的下划线效果 */
+.link span {
+    display: inline-block;
+    position: relative;
+}
+
+.link span::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.link:hover span::after {
+    width: 100%;
+}
+
+
+#sidebar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 100px;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Salsa", cursive;
+}
+
+#sidebar ul li a:hover {
+    background-color: white; 
+    color:black;
+    transition: 1s;
+}
+
+
+
+#survey-form-trigger {
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid white;
+    width: auto;
+}
+
+#survey-form {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#survey-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#survey-form label {
+    margin-bottom: 5px;
+}
+
+#survey-form input[type="email"],
+#survey-form textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#survey-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+#survey-form button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #header {
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 1.2rem; 
+    }
+
+    #instagram, #wechat, #email {
+        top: initial; 
+        bottom: 20px; 
+        left: initial; 
+        right: 10px; 
+    }
+
+    #sidebar {
+        width: 150px; 
+    }
+
+    #sidebar ul li a {
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 767px) {
+    body, html {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh;
+        text-align: center; 
+    }
+
+    #header {
+        flex-direction: column; 
+        height: auto; 
+        padding: 10px 0; 
+    }
+
+    h1 {
+        font-size: 1rem; 
+    }
+
+    #instagram, #email, #wechat {
+        width: 100%; 
+        position: static; 
+        margin: 10px 0; 
+    }
+
+
+    #email-content {
+        display: block; 
+    }
+
+    #sidebar {
+        width: 100%; 
+        bottom: auto;
+        bottom: 0; 
+    }
+
+    #sidebar ul {
+        display: flex; 
+        justify-content: space-around;
+        flex-wrap: wrap; 
+    }
+
+    #sidebar ul li a {
+        font-size: 14px; 
+    }
+}
+
+

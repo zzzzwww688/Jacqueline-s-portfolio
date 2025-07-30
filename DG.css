@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Madimi+One&family=Merriweather:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Adjust this to align header and sidebar */
+}
+
+/* Header styling */
+#header h1 {
+    font-family: "Salsa", cursive;
+    font-size: 40px;
+    color: white;
+    margin: 20px 0;
+    margin-top: 100px;
+}
+
+/* Sidebar styling */
+#sidebar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 100px;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Salsa", cursive;
+}
+
+#sidebar ul li a:hover {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+section {
+    max-width: 800px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+h3, h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: "Salsa", cursive;
+    /* font-family: 'Merriweather', serif; */
+}
+
+p, ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+    font-family: 'Merriweather', serif;
+}
+/* Main content container */
+#content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center the content */
+    padding: 20px;
+    width: 100%; /* Full width for centering */
+}
+
+/* Container for image and inspiration */
+.content-container {
+    display: flex;
+    justify-content: center; /* Center image and text container */
+    align-items: flex-start; /* Align items at the top */
+    gap: 30px; /* Space between the image and the text */
+    width: 100%; /* Full width to align centrally */
+}
+
+/* Center the image */
+.substance, .component {
+    max-width: 800px; /* Set max width */
+    margin-bottom: 50px; /* Space between sections */
+    text-align: left;
+}
+
+/* Title styling */
+.inspiration-words, .component-title-text, .feedback-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* Paragraph styling */
+.inspiration-text p, .cp p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Container for image and feedback side by side */
+.image-feedback-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    gap: 30px; /* Space between the image and feedback */
+    width: 100%; /* Full width */
+}
+
+/* Image styling */
+.referral img {
+    width: 600px; /* Adjust image size as needed */
+    height: auto;
+    border: 3px solid white;
+}
+
+/* Image hover effect */
+.referral img:hover {
+    filter: none;
+}
+.project-overview h3 {
+    font-family: 'Gideon Roman', cursive;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.project-overview h4 {
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.project-overview .overview p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Problem Statement Section */
+.problem-statement h4 {
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.problem-statement p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Features and Technology Section */
+.features-technology h4 {
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.features-technology ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.features-technology ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Tools and Methodology Section */
+.tools-methodology h4 {
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.tools-methodology ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.tools-methodology ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Outcomes and Achievements Section */
+.outcomes-achievements h4 {
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.outcomes-achievements ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.outcomes-achievements ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Challenges and Learnings Section */
+.challenges-learnings h4 {
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.challenges-learnings ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.challenges-learnings ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Future Directions Section */
+.future-directions h4 {
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.future-directions ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.future-directions ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Media and Demonstration Section */
+.media-demonstration h4 {
+    font-size: 24px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.media-demonstration ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.media-demonstration ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        max-width: 90%;
+    }
+
+    h3, h4 {
+        font-size: 20px;
+    }
+
+    p, ul {
+        font-size: 14px;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+    }
+}
+/* Feedback section styling */
+/* .feedback {
+    max-width: 400px; 
+    text-align: left;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.feedback-form label {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form textarea:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+.feedback-form button {
+    width: 150px;
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedback-form button:hover {
+    background-color: #777;
+} */

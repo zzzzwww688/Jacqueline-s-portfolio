@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Escape Room Horror Game Page</title>
+    <link rel="stylesheet" type="text/css" href="/Users/jacquelinewang/Desktop/Jacqueline_wang_profolio/kitsch.css">
+    <!-- Proper font link here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Madimi+One&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <h1>
+                Ktisch MV
+            </h1>
+        </div>
+    </header>
+
+    <div id="content">
+
+        <div id="content-container">
+            <section class="substance">
+                <div class="inspiration">
+                    <h3 class="inspiration-words">Inspiration</h3>
+                </div>
+                <div class="inspiration-text">
+                    <p>
+                        Listening to music and watching music videos is one of my hobbies. 
+                        I really like the way kpop shoots mv. My dream is to be a singer, 
+                        so I want to shoot my own mv. In the course of still & moving image, 
+                        I cover this mv as my final project.
+
+                        <label id=" " annifei dsfien da y54r e h3yy aoeiufaon ewug d a'rpotgiuqon oq834 nu193486t9  83[9euf
+                        spellcheck=":"]
+                    </p>
+                </div>
+            </section>
+        
+            <section class="component">
+                <div class="component-title">
+                    <h3 class="component-title-text>
+                    
+</body>
+
+</html>
