@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cyberpunk VR City – GRL GVNG</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Madimi+One&family=Merriweather:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Page styles -->
+    <link rel="stylesheet" type="text/css" href="xg_cyberpunk_world.styles.css" />
+</head>
+<body>
+    <!-- Global navigation -->
+    <nav id="sidebar">
+        <ul>
+            <li><a href="profolio_project.html">About</a></li>
+            <li><a href="Science.html">Immersive Works</a></li>
+            <li><a href="Art.html">Visual Works</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page header -->
+    <header id="header">
+        <h1>Cyberpunk VR City</h1>
+        <p class="subtitle">VR environment inspired by XG "GRL GVNG"</p>
+    </header>
+
+    <!-- Main content -->
+    <div id="content">
+        <div id="content-container">
+
+            <!-- Overview -->
+            <section class="section-block">
+                <h2 class="section-title">Overview</h2>
+                <p>
+                    This VR environment is inspired by XG "GRL GVNG" and builds a neon cyberpunk city
+                    that combines futuristic architecture with themes of female empowerment and unity.
+                    Across two levels, a vertical city and a secret laboratory, the project translates
+                    the energy of a girl gang into an explorable world. My focus was on worldbuilding,
+                    atmosphere, and level transitions that make the space feel loud, crowded, and
+                    unapologetically powerful.
+                </p>
+            </section>
+
+            <!-- Concept and Inspiration -->
+            <section class="section-block">
+                <h2 class="section-title">Concept and Inspiration</h2>
+                <p>
+                    The concept merges the rebellious attitude of a gang with the strength of sisterhood.
+                    I wanted the player to feel like part of a crew moving through a digital city that
+                    belongs to them. The visual language draws from the XG music video, the Afterlife
+                    music festival, and the film Ready Player One. Elements such as giant statues,
+                    motorcycles or sports cars, stacked billboards, and dense high rise buildings are
+                    reimagined as VR props and landmarks.
+                </p>
+                <ul>
+                    <li>
+                        <strong>Visual style:</strong> Y2K and cyberpunk influences, with neon lights,
+                        metallic textures, and high contrast color palettes that mix silver and black
+                        with bright pink, blue, and purple.
+                    </li>
+                    <li>
+                        <strong>Empowerment theme:</strong> The city is not only a cool backdrop but
+                        a space that radiates unity, confidence, and resilience. It is built as a
+                        digital playground for a girl gang.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Environment Design -->
+            <section class="section-block">
+                <h2 class="section-title">Environment Design</h2>
+                <p>
+                    The project is structured around multiple zones that echo different references while
+                    staying inside one coherent cyberpunk city.
+                </p>
+                <ul>
+                    <li>
+                        <strong>Futuristic urban jungle:</strong> Towering buildings, layered alleyways,
+                        and streets packed with geometry create a crowded city feeling. I placed the
+                        buildings one by one to control composition and density.
+                    </li>
+                    <li>
+                        <strong>Neon and contrast:</strong> Neon textures and emissive materials are
+                        applied to signs, edges, and props. Cool skylight and directional light push
+                        the base of the city into bluish tones, which makes the neon accents pop.
+                    </li>
+                    <li>
+                        <strong>Street and club zone:</strong> Billboards labeled "club", Chinese
+                        "cinema" signs, a NYC bar, hotels, and restaurants build a nightlife district.
+                        These locations are not interactive yet but they frame the world as a place
+                        for gathering and celebration.
+                    </li>
+                    <li>
+                        <strong>Statue and sky elements:</strong> A large statue and floating gears
+                        reference Afterlife visuals and create a surreal layer above the city. They
+                        suggest a vertical extension of the level even if the player cannot reach
+                        them yet.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Levels -->
+            <section class="section-block">
+                <h2 class="section-title">Levels</h2>
+
+                <h3 class="subheading">Level 1: Cyberpunk City</h3>
+                <p>
+                    The first level is an overall view of the city. It includes the main streets,
+                    a parking lot filled with different vehicles, and sightlines toward the statue
+                    and sky structures. The red sports car in the parking lot becomes a focal object
+                    inside the composition. This level focuses on scale, density, and mood rather
+                    than interaction.
+                </p>
+
+                <h3 class="subheading">Level 2: Secret Laboratory</h3>
+                <p>
+                    The second level moves into a secret laboratory hidden inside the city. The
+                    centerpiece is a tall black device that feels like something from Dune or
+                    Star Wars. Unlike the darker lab in the MV, I chose a brighter color palette
+                    but kept the sense of strangeness and ritual. Music, fade animations, and
+                    level transitions are used to mark the shift from city to lab and build a
+                    more cinematic feeling.
+                </p>
+            </section>
+
+            <!-- Technical Implementation -->
+            <section class="section-block">
+                <h2 class="section-title">Technical Implementation</h2>
+                <ul>
+                    <li>
+                        <strong>Engine:</strong> Built in Unity as a VR environment with multiple
+                        scenes for different levels.
+                    </li>
+                    <li>
+                        <strong>Lighting:</strong> Combination of skylight, directional light, and
+                        emissive neon materials. I adjusted light color and intensity to balance
+                        readability with strong cyberpunk contrast.
+                    </li>
+                    <li>
+                        <strong>Level transitions:</strong> Fade animations and music changes mark
+                        the move from city to lab. Entering the second level triggers music playback
+                        and visual transitions that smooth the experience.
+                    </li>
+                    <li>
+                        <strong>Performance and nav mesh:</strong> High geometry density created
+                        issues such as flickering city and lab walls and a broken nav mesh in the
+                        first level. This project pushed me to think about optimization and to
+                        accept that less geometry can produce a better player experience.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Process and Reflection -->
+            <section class="section-block">
+                <h2 class="section-title">Process and Reflection</h2>
+                <p>
+                    During the final stage of the project my original file was accidentally deleted,
+                    so I had to rebuild the environment in a very short amount of time. This forced
+                    me to make faster decisions and simplified compositions. I planned three levels
+                    at first, but in the final version there are two levels, with part of the third
+                    level merged into the city as an elevated statue space.
+                </p>
+                <p>
+                    Feedback from classmates highlighted the visuals of the neon city and the
+                    immersive feeling of the environment. Feedback from a guest professor pointed
+                    out that the city had too many elements and that performance would improve
+                    if I removed some of them, for example the parking lot. This taught me to
+                    think in a more disciplined way and follow a less is more approach when
+                    building dense worlds.
+                </p>
+                <p>
+                    Going forward I want to refine the nav mesh in the first level, adjust the
+                    number of assets, and add more guided pathways so that players can move
+                    comfortably while still feeling the intensity of the cyberpunk city.
+                </p>
+            </section>
+
+            <!-- Media: video + screenshots -->
+            <section class="section-block">
+                <h2 class="section-title">Media</h2>
+
+                <!-- Music reference -->
+                <div class="media-note">
+                    <p>
+                        <strong>Music reference:</strong>
+                        <a href="https://www.youtube.com/watch?v=Xiai4BRzZpU" target="_blank">
+                            XG "GRL GVNG"
+                        </a>
+                        and
+                        <a href="https://www.youtube.com/watch?v=lL33GmldDcs&t=292s" target="_blank">
+                            Afterlife Visuals
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Promotional video -->
+                <div class="media-video">
+                    <video controls>
+                        <source src="img/cyberpunk_promo.mp4" type="video/mp4" />
+                    </video>
+                </div>
+
+                <!-- Screenshot grid -->
+                <div class="media-grid">
+                    <figure>
+                        <img src="img/cyber1.png" alt="Open second level">
+                        <figcaption>Open second level</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/cyber2.png" alt="Parking lot in city">
+                        <figcaption>Play musicj after enter second level</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/cyber3.png" alt="Lab gate">
+                        <figcaption>Fade animation while entering the second level.</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

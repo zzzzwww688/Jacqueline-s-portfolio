@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jacqueine's Portfolio Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Merriweather&display=swap" rel="stylesheet">  
+</head>
+<body>      
+    <div id="initial">
+        <h1 id="main-title">Jacqueline Wang</h1>
+    </div>
+
+    <div id="content" style="display: none;">
+        <div id="title">
+            <header id="header">
+                <h1>Jacqueline Wang</h1>
+            </header>
+            <div id="role">
+                <h2>Digital Content Creator</h2>
+            </div>
+        </div>
+
+        <nav id="sidebar">
+            <ul>
+                <li><a href="profolio_project.html">About</a></li>
+                <li><a href="Science.html">Immersive Works</a></li>
+                <li><a href="Art.html">Visual Works</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="about" class="content-container">
+            <div class="hello">
+                <h1 class="hello-text">Hello!</h1>
+            </div>
+
+            <div class="introduction">
+                <p>
+                    I’m Jacqueline Wang, a digital content creator, game developer,
+                    and creative technologist studying Integrated Design & Media at NYU Tandon
+                    with a minor in Computer Science.
+                </p>
+            </div>
+
+            <section class="details">
+                <div id="statement">
+
+                    <!-- Short bio paragraph -->
+                    <p>
+                        My work spans XR and VR world-building, game development, narrative design,
+                        and digital content creation. I have built projects including immersive VR
+                        environments, GameMaker and Unity prototypes, photography-based narratives,
+                        and self-directed performance videos.
+                    </p>
+
+                    <!-- Expansion paragraph (your first block) -->
+                    <p>
+                        My creative practice moves between digital storytelling and interactive systems.
+                        In XR projects such as <em>Cyberpunk City</em> and <em>ASMR City</em>,
+                        I designed 3D environments, built spatial interactions, and explored how
+                        atmosphere affects user emotion. In my game work, including laboratory-themed
+                        psychological horror prototypes and pixel-style action games, I developed
+                        mechanics, dialogue systems, and environmental narrative structures using
+                        Unity, GameMaker, and Blender.
+                    </p>
+
+                    <!-- Expansion paragraph (your second block) -->
+                    <p>
+                        I also direct and perform in visual projects, integrating choreography,
+                        cinematography, and digital media production to experiment with movement
+                        and narrative. Across these projects, I am interested in how technology
+                        shapes perception, how interactive spaces influence behavior, and how
+                        world-building can merge artistic intuition with computational design.
+                    </p>
+                </div>
+            </section>
+        </section>
+
+
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            const mainTitle = document.getElementById('main-title');
+            mainTitle.style.animation = 'disappear 1s forwards';
+
+            mainTitle.addEventListener('animationend', function() {
+                document.getElementById('initial').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
+
